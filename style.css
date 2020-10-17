@@ -1,9 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+
 #container {
     width: 800px;
     height: 800px;
     display: grid;
+    border: 4px solid black;
 }
 
 .box {
     background-color: lightgray;
+}
+
+button {
+    padding: 10px;
+    margin: 10px auto;
+    color: lightgray;
+    background-color: #778899;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: #9ca8b4;
 }
