@@ -6,7 +6,7 @@ for (i = 0; i < 256; i++) {
 
 document.querySelectorAll(".box").forEach(item => {
     item.addEventListener("mouseover", event => {
-        item.style.backgroundColor = "blue";
+        item.style.backgroundColor = "black";
         console.log("cheese");
     })
 })
