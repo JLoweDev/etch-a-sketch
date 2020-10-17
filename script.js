@@ -10,3 +10,31 @@ document.querySelectorAll(".box").forEach(item => {
         console.log("cheese");
     })
 })
+
+function createGrid () {
+    deleteBoxes();
+    let x = prompt("How many columns(x axis)?", "20");
+    let y = prompt("How many rows (y axis)?", "20");
+    let z = x * y;
+    for (i = 0; i < z; i++) {
+        container.innerHTML += '<div class="box"></div>'
+    }
+    container.style.gridTemplateColumns = `repeat(${x}, 10px)`;
+    container.style.gridTemplateRows = `repeat(${y}, 10px)`;
+    addListeners();
+}
+
+function deleteBoxes () {
+    document.querySelectorAll(".box").forEach(item => {
+        item.remove();
+        })
+}
+
+function addListeners () {
+    document.querySelectorAll(".box").forEach(item => {
+        item.addEventListener("mouseover", event => {
+            item.style.backgroundColor = "black";
+            console.log("cheese");
+        })
+    })
+}
