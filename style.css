@@ -1,7 +1,9 @@
 #container {
+    width: 600px;
+    height: 600px;
     display: grid;
-    grid-template-columns: repeat(16, 10px);
-    grid-template-rows: repeat(16, 10px);
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
 }
 
 .box {

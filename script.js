@@ -19,8 +19,8 @@ function createGrid () {
     for (i = 0; i < z; i++) {
         container.innerHTML += '<div class="box"></div>'
     }
-    container.style.gridTemplateColumns = `repeat(${x}, 10px)`;
-    container.style.gridTemplateRows = `repeat(${y}, 10px)`;
+    container.style.gridTemplateColumns = `repeat(${x}, auto)`;
+    container.style.gridTemplateRows = `repeat(${y}, auto)`;
     addListeners();
 }
 
