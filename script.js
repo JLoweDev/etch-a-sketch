@@ -33,7 +33,7 @@ function deleteBoxes () {
 function addListeners () {
     document.querySelectorAll(".box").forEach(item => {
         item.addEventListener("mouseover", event => {
-            item.style.backgroundColor = "black";
+            item.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
             console.log("cheese");
         })
     })
